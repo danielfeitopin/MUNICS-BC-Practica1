@@ -33,4 +33,9 @@ contract FabricaContract {
         uint randId = _generarIdAleatorio(_nombre);
         _crearProducto(_nombre, randId);
     }
+
+    function Propiedad(uint _id) public {
+        productoAPropietario[_id] = msg.sender;
+        propietarioProductos[msg.sender]++;
+    }
 }
