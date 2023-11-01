@@ -11,8 +11,11 @@ contract FabricaContract {
 
     Producto[] public productos;
 
+    event NuevoProducto(uint ArrayProductId, string nombre, uint id);
+
     function _crearProducto(string memory _nombre, uint _id) private {
         productos.push(Producto(_nombre, _id));
+        emit NuevoProducto(productos.length - 1, _nombre, _id);
     }
 
     function _generarIdAleatorio(
