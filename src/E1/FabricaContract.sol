@@ -8,4 +8,6 @@ contract FabricaContract {
         string nombre;
         uint id;
     }
+
+    Producto[] public productos;
 }
