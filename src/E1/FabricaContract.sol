@@ -11,6 +11,9 @@ contract FabricaContract {
 
     Producto[] public productos;
 
+    mapping(uint => address) public productoAPropietario;
+    mapping(address => uint) propietarioProductos;
+
     event NuevoProducto(uint ArrayProductId, string nombre, uint id);
 
     function _crearProducto(string memory _nombre, uint _id) private {
