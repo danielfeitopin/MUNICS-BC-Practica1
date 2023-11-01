@@ -38,4 +38,23 @@ contract FabricaContract {
         productoAPropietario[_id] = msg.sender;
         propietarioProductos[msg.sender]++;
     }
+
+    function getProductosPorPropietario(
+        address _propietario
+    ) external view returns (uint[] memory) {
+        uint contador = 0;
+        uint[] memory resultado = new uint[](
+            propietarioProductos[_propietario]
+        );
+
+        for (uint i = 0; i < productos.length; i++) {
+            uint id = productos[i].id;
+            if (productoAPropietario[productos[i].id] == _propietario) {
+                resultado[contador] = id;
+                contador++;
+            }
+        }
+
+        return resultado;
+    }
 }
