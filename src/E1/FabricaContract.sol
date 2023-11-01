@@ -22,4 +22,9 @@ contract FabricaContract {
         uint idModulus = 10 ** idDigits;
         return rand % idModulus;
     }
+
+    function crearProductoAleatorio(string memory _nombre) public {
+        uint randId = _generarIdAleatorio(_nombre);
+        _crearProducto(_nombre, randId);
+    }
 }
