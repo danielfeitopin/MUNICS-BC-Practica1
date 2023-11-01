@@ -10,4 +10,8 @@ contract FabricaContract {
     }
 
     Producto[] public productos;
+
+    function _crearProducto(string memory _nombre, uint _id) private {
+        productos.push(Producto(_nombre, _id));
+    }
 }
