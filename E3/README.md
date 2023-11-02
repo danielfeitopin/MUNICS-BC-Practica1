@@ -10,3 +10,13 @@
 
 </div>
 
+## E3.2
+
+> Obtener ETH de prueba de Sepolia.
+
+<div align="center">
+
+<img width="920px" src="./3.2 Obtaining Sepolia ETH.png">
+
+</div>
+
