@@ -34,4 +34,19 @@ contract TokenContract {
         users[owner].tokens -= _amount;
         users[_receiver].tokens += _amount;
     }
+
+    function buyToken() external payable {
+        // This prevents the owner from spending money in case of mistake
+        require(msg.sender != owner);
+
+        uint cost = 5 ether;
+
+        // Set at the exact price, so we don't need to return the change
+        require(msg.value == cost);
+
+        uint amount = msg.value / cost;
+        require(users[owner].tokens >= amount);
+        users[owner].tokens -= amount;
+        users[msg.sender].tokens += amount;
+    }
 }
