@@ -32,3 +32,12 @@
 
 </div>
 
+## E3.4
+
+> Realizar un seguimiento de las transacciones en Sepolia Blockchain Explorer: <https://sepolia.etherscan.io/>
+
+<div align="center">
+
+<img width="920px" src="./3.4 Transactions.png">
+
+</div>
