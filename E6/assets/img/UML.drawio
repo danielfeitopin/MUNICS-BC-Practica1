@@ -1,0 +1,78 @@
+<mxfile host="app.diagrams.net" modified="2023-11-05T18:11:28.628Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="011H0FNLCx1lF8k8Yim5" version="22.0.8" type="device">
+  <diagram name="Página-1" id="pbDBz7yOnJCvq8SQ45ih">
+    <mxGraphModel dx="1909" dy="1067" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VyWOckFoJEnbkJvRzQIy-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=block;endFill=0;exitX=1.005;exitY=0.029;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="VyWOckFoJEnbkJvRzQIy-1" target="VyWOckFoJEnbkJvRzQIy-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VyWOckFoJEnbkJvRzQIy-1" value="Elections" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="23" y="90" width="510" height="424" as="geometry" />
+        </mxCell>
+        <mxCell id="VyWOckFoJEnbkJvRzQIy-2" value="+ currentElectionsDay&lt;span style=&quot;background-color: initial;&quot;&gt;: uint16&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="VyWOckFoJEnbkJvRzQIy-1">
+          <mxGeometry y="26" width="510" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="VyWOckFoJEnbkJvRzQIy-5" value="+ electionsDayList: uint16[]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="VyWOckFoJEnbkJvRzQIy-1">
+          <mxGeometry y="52" width="510" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="VyWOckFoJEnbkJvRzQIy-6" value="-&amp;nbsp;electionsToCandidates&lt;span style=&quot;background-color: initial;&quot;&gt;:&amp;nbsp;&lt;/span&gt;mapping(uint16 =&amp;gt; string[])" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="VyWOckFoJEnbkJvRzQIy-1">
+          <mxGeometry y="78" width="510" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="VyWOckFoJEnbkJvRzQIy-8" value="-&amp;nbsp;electionsToCandidateExist&lt;span style=&quot;background-color: initial;&quot;&gt;:&amp;nbsp;&lt;/span&gt;mapping(uint16 =&amp;gt; mapping(string =&amp;gt; bool))" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="VyWOckFoJEnbkJvRzQIy-1">
+          <mxGeometry y="104" width="510" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="VyWOckFoJEnbkJvRzQIy-9" value="-&amp;nbsp;electionsToCandidateToVotes&lt;span style=&quot;background-color: initial;&quot;&gt;:&amp;nbsp;&lt;/span&gt;mapping(uint16 =&amp;gt; mapping(string =&amp;gt; uint))" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="VyWOckFoJEnbkJvRzQIy-1">
+          <mxGeometry y="130" width="510" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="VyWOckFoJEnbkJvRzQIy-10" value="-&amp;nbsp;electionsToPeopleToVoted&lt;span style=&quot;background-color: initial;&quot;&gt;:&amp;nbsp;&lt;/span&gt;mapping(uint16 =&amp;gt; mapping(address =&amp;gt; bool))" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="VyWOckFoJEnbkJvRzQIy-1">
+          <mxGeometry y="156" width="510" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="VyWOckFoJEnbkJvRzQIy-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="VyWOckFoJEnbkJvRzQIy-1">
+          <mxGeometry y="182" width="510" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="VyWOckFoJEnbkJvRzQIy-14" value="&amp;lt;&amp;lt;constructor&amp;gt;&amp;gt; + constructor(_electionsTimeStamp: uint256, _candidates: string[] memory)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="VyWOckFoJEnbkJvRzQIy-1">
+          <mxGeometry y="190" width="510" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="VyWOckFoJEnbkJvRzQIy-4" value="-&amp;nbsp;_daysFromTimeStamp&lt;span style=&quot;background-color: initial;&quot;&gt;(_timestamp: uint): uint16&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="VyWOckFoJEnbkJvRzQIy-1">
+          <mxGeometry y="216" width="510" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="VyWOckFoJEnbkJvRzQIy-11" value="-&amp;nbsp;_isElectionsDay()&lt;span style=&quot;background-color: initial;&quot;&gt;: bool&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="VyWOckFoJEnbkJvRzQIy-1">
+          <mxGeometry y="242" width="510" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="VyWOckFoJEnbkJvRzQIy-12" value="-&amp;nbsp;_beginElections(_electionsDay: uint16, _candidates string[] memory)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="VyWOckFoJEnbkJvRzQIy-1">
+          <mxGeometry y="268" width="510" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="VyWOckFoJEnbkJvRzQIy-13" value="+ newElections(_electionsTimeStamp: uint256, _candidates: string[] memory)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="VyWOckFoJEnbkJvRzQIy-1">
+          <mxGeometry y="294" width="510" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="VyWOckFoJEnbkJvRzQIy-15" value="+&amp;nbsp;vote(_candidate: string)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="VyWOckFoJEnbkJvRzQIy-1">
+          <mxGeometry y="320" width="510" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="VyWOckFoJEnbkJvRzQIy-16" value="&amp;lt;&amp;lt;getter&amp;gt;&amp;gt; +&amp;nbsp;getElectionsDays()&lt;span style=&quot;background-color: initial;&quot;&gt;: uint16[] memory&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="VyWOckFoJEnbkJvRzQIy-1">
+          <mxGeometry y="346" width="510" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="VyWOckFoJEnbkJvRzQIy-17" value="&amp;lt;&amp;lt;getter&amp;gt;&amp;gt; +&amp;nbsp;getElectionsCandidates&lt;span style=&quot;background-color: initial;&quot;&gt;(_day: uint16)&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;: string[] memory&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="VyWOckFoJEnbkJvRzQIy-1">
+          <mxGeometry y="372" width="510" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="VyWOckFoJEnbkJvRzQIy-18" value="&amp;lt;&amp;lt;getter&amp;gt;&amp;gt; +&amp;nbsp;getCandidateVotes&lt;span style=&quot;background-color: initial;&quot;&gt;(_day: uint16, _candidate: string memory)&lt;/span&gt;&lt;span style=&quot;background-color: initial; border-color: var(--border-color);&quot;&gt;: uint&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="VyWOckFoJEnbkJvRzQIy-1">
+          <mxGeometry y="398" width="510" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="VyWOckFoJEnbkJvRzQIy-19" value="SafeMath" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="630" y="464" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VyWOckFoJEnbkJvRzQIy-20" value="Ownable" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="630" y="380" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VyWOckFoJEnbkJvRzQIy-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;exitX=1.006;exitY=0.045;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="VyWOckFoJEnbkJvRzQIy-1" target="VyWOckFoJEnbkJvRzQIy-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="109" />
+              <mxPoint x="560" y="489" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
